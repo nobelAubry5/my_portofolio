@@ -4,14 +4,17 @@ const Contact = () => {
     {
       name: "Courriel",
       icon: <SiGmail />,
+      link: "mailto:nobelaubry5@gmail.com",
     },
     {
       name: "Github",
       icon: <SiGithub />,
+      link: "https://github.com/nobelAubry5",
     },
     {
       name: "LinkedIn",
       icon: <SiLinkedin />,
+      link: "https://www.linkedin.com/in/aubry-nobel-niyonkuru-3206ba233/",
     },
   ];
   return (
@@ -25,11 +28,13 @@ const Contact = () => {
           key={index}
           className="flex flex-row items-center justify-between border-2 border-[#7480FF] p-4 mb-2 rounded-lg hover:text-white hover:bg-[#7480FF] cursor-pointer"
         >
-          <div className="flex items-center">
+          <a href={item.link} className="flex items-center w-full">
+            {" "}
+            {/* Added className to anchor tag */}
             <div className="mr-2">{item.icon}</div>
             <div>{item.name}</div>
-          </div>
-          <div className="ml-2">↗</div>
+            <div className="ml-3">↗</div> {/* Moved arrow to the right */}
+          </a>
         </div>
       ))}
     </section>

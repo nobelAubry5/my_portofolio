@@ -8,8 +8,8 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 function App() {
   return (
-    <div className="bg-white dark:bg-stone-900 ">
-      <div className="animate-in mx-auto max-w-sm md:max-w-xl lg:max-w-4xl mb-4">
+    <div className="bg-[#fafaf9] dark:bg-stone-900 ">
+      <div className="animate-in mx-auto max-w-xs md:max-w-xl lg:max-w-4xl mb-4">
         <Header />
         <Intro />
         <Contact />

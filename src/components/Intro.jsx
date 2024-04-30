@@ -1,11 +1,12 @@
+import Image from "../assets/aubry.png";
 const Intro = () => {
   return (
     <div>
       <div className="flex justify-start my-4">
         <img
-          src="https://placehold.co/150x150"
+          src={Image}
           alt="Aubry Nobel Niyonkuru"
-          className="rounded-full border-4 border-[#7480FF] p-1"
+          className="rounded-full border-4 border-[#7480FF] p-1 w-1/3 h-1/3 md:w-1/5 md:h-1/5"
         />
       </div>
       <h1 className="font-bold text-xl lg:text-3xl">Aubry Nobel Niyonkuru</h1>
@@ -14,7 +15,7 @@ const Intro = () => {
         dans la conception d&apos;applications web modernes.
       </p>
       <button className="bg-[#7480FF] text-center py-3 px-4 rounded-lg my-4 text-white">
-        Contactez-moi 📪
+        <a href="mailto:nobelaubry5@gmail.com">Contactez-moi 📪</a>
       </button>
     </div>
   );
